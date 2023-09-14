@@ -1,0 +1,38 @@
+import { CVType } from "../types";
+
+const cv: CVType = {
+  image: "../../assets/img/fox.png",
+  name: "Foxila O'Doxei",
+  profession: "Tricks N' Trap Designer",
+  about:
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus eaque blanditiis nemo. Voluptatibus excepturi adipisci illum nobis dicta assumenda optio.",
+
+  educations: [
+    {
+      institute: "Harvard University",
+      location: "State X, Road Y, Zaed",
+      studyYear: "2020-2022",
+      degree: "Programming 101",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus eaque blanditiis nemo. Voluptatibus excepturi adipisci illum nobis dicta assumenda optio.",
+    },
+    {
+      institute: "Harvard University",
+      location: "State X, Road Y, Zaed",
+      studyYear: "2020-2022",
+      degree: "Programming 101",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus eaque blanditiis nemo. Voluptatibus excepturi adipisci illum nobis dicta assumenda optio.",
+    },
+    {
+      institute: "Harvard University",
+      location: "State X, Road Y, Zaed",
+      studyYear: "2020-2022",
+      degree: "Programming 101",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus eaque blanditiis nemo. Voluptatibus excepturi adipisci illum nobis dicta assumenda optio.",
+    },
+  ],
+};
+
+export const useAppState = () => ({ cv });
