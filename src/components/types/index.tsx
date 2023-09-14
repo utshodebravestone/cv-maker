@@ -5,6 +5,8 @@ export interface CVType {
   about: string;
 
   educations: EducationType[];
+
+  experiences: ExperienceType[];
 }
 
 export interface EducationType {
@@ -12,5 +14,13 @@ export interface EducationType {
   location: string;
   studyYear: string;
   degree: string;
+  description: string;
+}
+
+export interface ExperienceType {
+  position: string;
+  location: string;
+  workYear: string;
+  company: string;
   description: string;
 }

@@ -1,5 +1,6 @@
 import Education from "../Education";
-import GenericList from "../List";
+import Experience from "../Experience";
+import List from "../List";
 import Profile from "../Profile";
 import Section from "../Section";
 
@@ -14,7 +15,10 @@ const CV = () => {
       <div className="flex gap-2">
         <div className="w-4/6">
           <Section title="Education">
-            <GenericList component={Education} data={cv.educations} />
+            <List component={Education} data={cv.educations} />
+          </Section>
+          <Section title="Experience">
+            <List component={Experience} data={cv.experiences} />
           </Section>
         </div>
         <div className="w-2/6"></div>
