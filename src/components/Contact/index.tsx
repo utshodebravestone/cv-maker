@@ -12,16 +12,16 @@ const Contact = () => {
   return (
     <div className="flex gap-2">
       <div className="flex flex-col gap-2.5 justify-end  w-1/6">
-        <AiFillPhone size={30} />
-        <AiFillMail size={30} />
-        <AiFillChrome size={30} />
-        <AiFillHome size={30} />
+        <AiFillPhone size={26} />
+        <AiFillMail size={26} />
+        <AiFillChrome size={26} />
+        <AiFillHome size={26} />
       </div>
       <div className=" flex flex-col gap-3 justify-end w-5/6">
-        <p className="font-medium text-xl">{cv.phone}</p>
-        <p className="font-medium text-xl">{cv.email}</p>
-        <p className="font-medium text-xl">{cv.website}</p>
-        <p className="font-medium text-xl">{cv.location}</p>
+        <p>{cv.phone}</p>
+        <p>{cv.email}</p>
+        <p>{cv.website}</p>
+        <p>{cv.location}</p>
       </div>
     </div>
   );
