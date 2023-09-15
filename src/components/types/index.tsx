@@ -12,6 +12,8 @@ export interface CVType {
   educations: EducationType[];
 
   experiences: ExperienceType[];
+
+  skills: SkillType[];
 }
 
 export interface EducationType {
@@ -28,4 +30,8 @@ export interface ExperienceType {
   workYear: string;
   company: string;
   description: string;
+}
+
+export interface SkillType {
+  name: string;
 }

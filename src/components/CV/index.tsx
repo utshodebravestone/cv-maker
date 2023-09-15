@@ -4,6 +4,7 @@ import Experience from "../Experience";
 import List from "../List";
 import Profile from "../Profile";
 import Section from "../Section";
+import Skill from "../Skill";
 
 import { useAppState } from "../state/appState";
 
@@ -23,11 +24,11 @@ const CV = () => {
           </Section>
         </div>
         <div className="grid grid-cols-2 lg:flex flex-col  gap-6 w-full lg:w-2/6">
-          <Section title="contact">
+          <Section title="Contact">
             <Contact />
           </Section>
-          <Section title="contact">
-            <Contact />
+          <Section title="Skills">
+            <List component={Skill} data={cv.skills} />
           </Section>
         </div>
       </div>

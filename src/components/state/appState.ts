@@ -66,6 +66,14 @@ const cv: CVType = {
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus eaque blanditiis nemo. Voluptatibus excepturi adipisci illum nobis dicta assumenda optio.",
     },
   ],
+
+  skills: [
+    { name: "Hunting" },
+    { name: "Tricking" },
+    { name: "Trapping" },
+    { name: "Yooing (Yelling)" },
+    { name: "Running away at the first sight of any Dog." },
+  ],
 };
 
 export const useAppState = () => ({ cv });
