@@ -1,3 +1,4 @@
+import Contact from "../Contact";
 import Education from "../Education";
 import Experience from "../Experience";
 import List from "../List";
@@ -21,9 +22,12 @@ const CV = () => {
             <List component={Experience} data={cv.experiences} />
           </Section>
         </div>
-        <div className="w-full lg:w-2/6">
-          <Section title="Experience">
-            <List component={Experience} data={cv.experiences} />
+        <div className="grid grid-cols-2 lg:flex flex-col  gap-6 w-full lg:w-2/6">
+          <Section title="contact">
+            <Contact />
+          </Section>
+          <Section title="contact">
+            <Contact />
           </Section>
         </div>
       </div>

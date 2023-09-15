@@ -4,6 +4,11 @@ export interface CVType {
   profession: string;
   about: string;
 
+  phone: string;
+  email: string;
+  website: string;
+  location: string;
+
   educations: EducationType[];
 
   experiences: ExperienceType[];

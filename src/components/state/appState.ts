@@ -8,6 +8,11 @@ const cv: CVType = {
   about:
     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus eaque blanditiis nemo. Voluptatibus excepturi adipisci illum nobis dicta assumenda optio.",
 
+  phone: "+123 456 7890",
+  email: "foxila.doxei@fox.com",
+  website: "fixila-odoxei.com",
+  location: "State X, Y Forrest, Zad",
+
   educations: [
     {
       institute: "Foxford University",
