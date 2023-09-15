@@ -82,6 +82,13 @@ const cv: CVType = {
     { name: "English" },
     { name: "Italian" },
   ],
+
+  hobbies: [
+    { name: "Hunting" },
+    { name: "Tricking" },
+    { name: "Trapping" },
+    { name: "Yooing (Yelling)" },
+  ],
 };
 
 export const useAppState = () => ({ cv });

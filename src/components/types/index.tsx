@@ -16,6 +16,8 @@ export interface CVType {
   skills: SkillType[];
 
   languages: LanguageType[];
+
+  hobbies: HobbyType[];
 }
 
 export interface EducationType {
@@ -39,5 +41,9 @@ export interface SkillType {
 }
 
 export interface LanguageType {
+  name: string;
+}
+
+export interface HobbyType {
   name: string;
 }

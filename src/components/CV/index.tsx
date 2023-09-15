@@ -1,6 +1,7 @@
 import Contact from "../Contact";
 import Education from "../Education";
 import Experience from "../Experience";
+import Hobby from "../Hobby";
 import Language from "../Language";
 import List from "../List";
 import Profile from "../Profile";
@@ -24,15 +25,18 @@ const CV = () => {
             <List component={Experience} data={cv.experiences} />
           </Section>
         </div>
-        <div className="grid grid-cols-2 lg:flex flex-col  gap-6 w-full lg:w-2/6">
-          <Section title="Contact">
-            <Contact />
-          </Section>
+        <div className="grid grid-cols-2 lg:flex flex-col gap-x-5 w-full lg:w-2/6">
           <Section title="Skills">
             <List component={Skill} data={cv.skills} />
           </Section>
           <Section title="Languages">
             <List component={Language} data={cv.languages} />
+          </Section>
+          <Section title="Contact">
+            <Contact />
+          </Section>
+          <Section title="Hobbies">
+            <List component={Hobby} data={cv.hobbies} />
           </Section>
         </div>
       </div>
