@@ -74,6 +74,14 @@ const cv: CVType = {
     { name: "Yooing (Yelling)" },
     { name: "Running away at the first sight of any Dog." },
   ],
+
+  languages: [
+    { name: "Greek" },
+    { name: "Hibru" },
+    { name: "Indo" },
+    { name: "English" },
+    { name: "Italian" },
+  ],
 };
 
 export const useAppState = () => ({ cv });

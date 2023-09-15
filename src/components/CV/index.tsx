@@ -1,6 +1,7 @@
 import Contact from "../Contact";
 import Education from "../Education";
 import Experience from "../Experience";
+import Language from "../Language";
 import List from "../List";
 import Profile from "../Profile";
 import Section from "../Section";
@@ -29,6 +30,9 @@ const CV = () => {
           </Section>
           <Section title="Skills">
             <List component={Skill} data={cv.skills} />
+          </Section>
+          <Section title="Languages">
+            <List component={Language} data={cv.languages} />
           </Section>
         </div>
       </div>

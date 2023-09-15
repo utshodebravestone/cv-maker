@@ -14,6 +14,8 @@ export interface CVType {
   experiences: ExperienceType[];
 
   skills: SkillType[];
+
+  languages: LanguageType[];
 }
 
 export interface EducationType {
@@ -33,5 +35,9 @@ export interface ExperienceType {
 }
 
 export interface SkillType {
+  name: string;
+}
+
+export interface LanguageType {
   name: string;
 }
