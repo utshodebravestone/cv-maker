@@ -1,4 +1,4 @@
-import { HobbyType } from "../types";
+import { HobbyType } from "../../types";
 
 const Hobby = (hobby: HobbyType) => {
   return (

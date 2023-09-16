@@ -8,7 +8,7 @@ import Profile from "../Profile";
 import Section from "../Section";
 import Skill from "../Skill";
 
-import { useAppState } from "../state/appState";
+import { useAppState } from "../../state/appState";
 
 const CV = () => {
   const { cv } = useAppState();

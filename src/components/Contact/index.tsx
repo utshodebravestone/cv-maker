@@ -1,10 +1,10 @@
 import {
   AiFillChrome,
-  AiFillHome,
+  AiFillEnvironment,
   AiFillMail,
   AiFillPhone,
 } from "react-icons/ai";
-import { useAppState } from "../state/appState";
+import { useAppState } from "../../state/appState";
 
 const Contact = () => {
   const { cv } = useAppState();
@@ -15,7 +15,7 @@ const Contact = () => {
         <AiFillPhone size={22} />
         <AiFillMail size={22} />
         <AiFillChrome size={22} />
-        <AiFillHome size={22} />
+        <AiFillEnvironment size={22} />
       </div>
       <div className=" flex flex-col gap-1 justify-end w-5/6">
         <p>{cv.phone}</p>

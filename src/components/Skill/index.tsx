@@ -1,4 +1,4 @@
-import { SkillType } from "../types";
+import { SkillType } from "../../types";
 
 const Skill = (skill: SkillType) => {
   return (

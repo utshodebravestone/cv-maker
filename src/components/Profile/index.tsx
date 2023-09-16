@@ -1,5 +1,5 @@
 import Section from "../Section";
-import { useAppState } from "../state/appState";
+import { useAppState } from "../../state/appState";
 
 const Profile = () => {
   const { cv } = useAppState();
