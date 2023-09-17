@@ -60,7 +60,7 @@ const Control = () => {
       <Collapse
         title={
           <div className="flex items-center gap-2">
-            <AiFillWeiboCircle size={26} />
+            <AiFillAlipayCircle size={26} />
             <h1 className="text-2xl">Languages</h1>
           </div>
         }
@@ -71,7 +71,7 @@ const Control = () => {
       <Collapse
         title={
           <div className="flex items-center gap-2">
-            <AiFillAlipayCircle size={26} />
+            <AiFillWeiboCircle size={26} />
             <h1 className="text-2xl">Hobbies</h1>
           </div>
         }

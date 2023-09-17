@@ -1,6 +1,6 @@
 import { CVType } from "../types";
 
-const cv: CVType = {
+export const exampleCV: CVType = {
   image:
     "https://st3.depositphotos.com/4201529/17577/i/450/depositphotos_175773982-stock-photo-close-view-red-fox-resting.jpg",
   name: "Foxila O'Doxei",
@@ -90,5 +90,3 @@ const cv: CVType = {
     { name: "Yooing (Yelling)" },
   ],
 };
-
-export const useAppState = () => ({ cv });
