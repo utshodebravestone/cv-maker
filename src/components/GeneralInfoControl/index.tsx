@@ -1,21 +1,26 @@
 import { useEffect } from "react";
 import useForm from "../../hooks/useForm";
 import Input from "../Shared/Input";
+import { useAppState } from "../../state/AppState";
+import { actionUpdate } from "../../state/types";
 
 const GeneralInfoControl = () => {
+  const { cv, dispatch } = useAppState();
+
   const [formData, onChange] = useForm({
-    name: "",
-    profession: "",
-    phone: "",
-    email: "",
-    web: "",
-    address: "",
-    about: "",
+    name: cv.name,
+    profession: cv.profession,
+    phone: cv.phone,
+    email: cv.email,
+    website: cv.website,
+    location: cv.location,
+    about: cv.about,
+    image: cv.image,
   });
 
   useEffect(() => {
-    console.log(formData);
-  }, [formData]);
+    dispatch(actionUpdate({ ...cv, ...formData }));
+  }, [formData, cv, dispatch]);
 
   return (
     <form
@@ -35,7 +40,7 @@ const GeneralInfoControl = () => {
         onChange={onChange}
       />
       <Input
-        type="number"
+        type="text"
         name="phone"
         value={formData.phone}
         onChange={onChange}
@@ -46,11 +51,22 @@ const GeneralInfoControl = () => {
         value={formData.email}
         onChange={onChange}
       />
-      <Input type="url" name="web" value={formData.web} onChange={onChange} />
+      <Input
+        type="url"
+        name="website"
+        value={formData.website}
+        onChange={onChange}
+      />
       <Input
         type="text"
-        name="address"
-        value={formData.address}
+        name="location"
+        value={formData.location}
+        onChange={onChange}
+      />
+      <Input
+        type="url"
+        name="image"
+        value={formData.image}
         onChange={onChange}
       />
       <Input

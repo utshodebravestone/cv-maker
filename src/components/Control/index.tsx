@@ -22,9 +22,7 @@ const Control = () => {
           </div>
         }
       >
-        <div className="mb-5">
-          <GeneralInfoControl />
-        </div>
+        <GeneralInfoControl />
       </Collapse>
 
       <Collapse
