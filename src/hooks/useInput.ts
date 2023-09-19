@@ -2,17 +2,9 @@ import { Dispatch, SetStateAction, useState } from "react";
 
 const useForm = <T>(
   initialValue: T
-): {
-  value: T;
-  setValue: Dispatch<SetStateAction<T>>;
-  resetValue: () => void;
-} => {
+): [T, Dispatch<SetStateAction<T>>, () => void] => {
   const [value, setValue] = useState(initialValue);
-  return {
-    value,
-    setValue,
-    resetValue: () => setValue(initialValue),
-  };
+  return [value, setValue, () => setValue(initialValue)];
 };
 
 export default useForm;

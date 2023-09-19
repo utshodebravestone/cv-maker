@@ -7,6 +7,7 @@ import {
   AiFillWeiboCircle,
 } from "react-icons/ai";
 import Collapse from "../Collapse";
+import GeneralInfoControl from "../GeneralInfoControl";
 
 const Control = () => {
   return (
@@ -21,7 +22,9 @@ const Control = () => {
           </div>
         }
       >
-        <h1>Things</h1>
+        <div className="mb-5">
+          <GeneralInfoControl />
+        </div>
       </Collapse>
 
       <Collapse
