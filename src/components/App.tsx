@@ -1,7 +1,7 @@
 import { AiFillControl } from "react-icons/ai";
 import CV from "./CV";
 import Control from "./Control";
-import Collapse from "./Collapse";
+import Collapse from "./Shared/Collapse";
 
 const App = () => {
   return (

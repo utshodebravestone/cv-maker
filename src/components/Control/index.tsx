@@ -6,7 +6,7 @@ import {
   AiFillTool,
   AiFillWeiboCircle,
 } from "react-icons/ai";
-import Collapse from "../Collapse";
+import Collapse from "../Shared/Collapse";
 import GeneralInfoControl from "../GeneralInfoControl";
 
 const Control = () => {
