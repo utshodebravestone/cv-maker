@@ -1,4 +1,4 @@
-import { EducationType } from "../../types";
+import { EducationType } from "../types";
 
 const Education = (education: EducationType) => {
   return (

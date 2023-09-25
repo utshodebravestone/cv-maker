@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import useForm from "../../hooks/useForm";
-import Input from "../Shared/Input";
-import { useAppState } from "../../state/AppState";
-import { actionUpdate } from "../../state/types";
+import useForm from "../hooks/useForm";
+import Input from "./Shared/Input";
+import { useAppState } from "../state/AppState";
+import { actionUpdate } from "../state/types";
 
 const GeneralInfoControl = () => {
   const { cv, dispatch } = useAppState();

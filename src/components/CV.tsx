@@ -1,14 +1,14 @@
-import Contact from "../Contact";
-import Education from "../Education";
-import Experience from "../Experience";
-import Hobby from "../Hobby";
-import Language from "../Language";
-import List from "../Shared/List";
-import Profile from "../Profile";
-import Section from "../Section";
-import Skill from "../Skill";
+import Contact from "./Contact";
+import Education from "./Education";
+import Experience from "./Experience";
+import Hobby from "./Hobby";
+import Language from "./Language";
+import List from "./Shared/List";
+import Profile from "./Profile";
+import Section from "./Section";
+import Skill from "./Skill";
 
-import { useAppState } from "../../state/AppState";
+import { useAppState } from "../state/AppState";
 
 const CV = () => {
   const { cv } = useAppState();

@@ -1,4 +1,4 @@
-import { ExperienceType } from "../../types";
+import { ExperienceType } from "../types";
 
 const Experience = (experience: ExperienceType) => {
   return (

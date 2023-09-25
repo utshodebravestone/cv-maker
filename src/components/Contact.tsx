@@ -4,7 +4,7 @@ import {
   AiFillMail,
   AiFillPhone,
 } from "react-icons/ai";
-import { useAppState } from "../../state/AppState";
+import { useAppState } from "../state/AppState";
 
 const Contact = () => {
   const { cv } = useAppState();

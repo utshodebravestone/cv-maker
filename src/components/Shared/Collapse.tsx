@@ -9,15 +9,13 @@ const Collapse = ({
   const [isOpen, toggleIsOpen] = useToggle(false);
   return (
     <>
-      <div className="p-2 flex justify-between items-center shadow-inner border-b border-gray-100">
+      <div className="p-2 flex justify-between items-center shadow-inner border-b border-gray-100 overflow-hidden">
         {title}
         <button onClick={toggleIsOpen}>
           {isOpen ? <AiFillCaretUp size={33} /> : <AiFillCaretDown size={33} />}
         </button>
       </div>
-      <div className="my-4 overflow-y-scroll no-scrollbar">
-        {isOpen && children}
-      </div>
+      <div className="my-4">{isOpen && children}</div>
     </>
   );
 };
