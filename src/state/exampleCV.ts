@@ -15,7 +15,7 @@ export const exampleCV: CVType = {
 
   educations: [
     {
-      id: "e1",
+      id: "ed1",
       institute: "Foxford University",
       location: "State X, Road Y, Zaed",
       studyYear: "2014-2016",
@@ -24,7 +24,7 @@ export const exampleCV: CVType = {
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus eaque blanditiis nemo. Voluptatibus excepturi adipisci illum nobis dicta assumenda optio.",
     },
     {
-      id: "e2",
+      id: "ed2",
       institute: "Foxvart University",
       location: "State X, Road Y, Zaed",
       studyYear: "2016-2018",
@@ -33,7 +33,7 @@ export const exampleCV: CVType = {
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus eaque blanditiis nemo. Voluptatibus excepturi adipisci illum nobis dicta assumenda optio.",
     },
     {
-      id: "e3",
+      id: "ed3",
       institute: "University of Foxvort",
       location: "State X, Road Y, Zaed",
       studyYear: "2018-2020",
@@ -45,6 +45,7 @@ export const exampleCV: CVType = {
 
   experiences: [
     {
+      id: "ex1",
       position: "Main Hunter",
       location: "Forrest X, Cont Y, Z",
       workYear: "2023-Now",
@@ -53,6 +54,7 @@ export const exampleCV: CVType = {
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus eaque blanditiis nemo. Voluptatibus excepturi adipisci illum nobis dicta assumenda optio.",
     },
     {
+      id: "ex2",
       position: "Trap Leader",
       location: "Forrest X, Cont Y, Z",
       workYear: "2022-2023",
@@ -61,6 +63,7 @@ export const exampleCV: CVType = {
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus eaque blanditiis nemo. Voluptatibus excepturi adipisci illum nobis dicta assumenda optio.",
     },
     {
+      id: "ex3",
       position: "Tricks Fox",
       location: "Forrest X, Cont Y, Z",
       workYear: "2021-2022",
@@ -71,25 +74,25 @@ export const exampleCV: CVType = {
   ],
 
   skills: [
-    { name: "Hunting" },
-    { name: "Tricking" },
-    { name: "Trapping" },
-    { name: "Yooing (Yelling)" },
-    { name: "Running away at the first sight of any Dog." },
+    { id: "sk1", name: "Hunting" },
+    { id: "sk", name: "Tricking" },
+    { id: "sk3", name: "Trapping" },
+    { id: "sk4", name: "Yooing (Yelling)" },
+    { id: "sk5", name: "Running away at the first sight of any Dog." },
   ],
 
   languages: [
-    { name: "Greek" },
-    { name: "Hibru" },
-    { name: "Indo" },
-    { name: "English" },
-    { name: "Italian" },
+    { id: "la1", name: "Greek" },
+    { id: "la2", name: "Hibru" },
+    { id: "la3", name: "Indo" },
+    { id: "la4", name: "English" },
+    { id: "la5", name: "Italian" },
   ],
 
   hobbies: [
-    { name: "Hunting" },
-    { name: "Tricking" },
-    { name: "Trapping" },
-    { name: "Yooing (Yelling)" },
+    { id: "ho1", name: "Hunting" },
+    { id: "ho2", name: "Tricking" },
+    { id: "ho3", name: "Trapping" },
+    { id: "ho4", name: "Yooing (Yelling)" },
   ],
 };

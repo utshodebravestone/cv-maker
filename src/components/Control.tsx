@@ -10,6 +10,7 @@ import Collapse from "./Shared/Collapse";
 import GeneralInfoControl from "./GeneralInfoControl";
 import EducationControl from "./EducationControl";
 import { useAppState } from "../state/AppState";
+import ExperienceControl from "./ExperienceControl";
 
 const Control = () => {
   const { cv } = useAppState();
@@ -42,8 +43,8 @@ const Control = () => {
             key={education.id}
             title={
               <div>
-                <h1>
-                  {education.degree}/{education.institute} -{" "}
+                <h1 className="text-xl font-medium">
+                  {education.degree} / {education.institute} |{" "}
                   {education.studyYear}
                 </h1>
               </div>
@@ -62,7 +63,21 @@ const Control = () => {
           </div>
         }
       >
-        <h1>Things</h1>
+        {cv.experiences.map((experience) => (
+          <Collapse
+            key={experience.id}
+            title={
+              <div>
+                <h1 className="text-xl font-medium">
+                  {experience.position} / {experience.company} |{" "}
+                  {experience.workYear}
+                </h1>
+              </div>
+            }
+          >
+            <ExperienceControl experience={experience} />
+          </Collapse>
+        ))}
       </Collapse>
 
       <Collapse

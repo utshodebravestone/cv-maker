@@ -30,6 +30,7 @@ export interface EducationType {
 }
 
 export interface ExperienceType {
+  id: string;
   position: string;
   location: string;
   workYear: string;
@@ -38,13 +39,16 @@ export interface ExperienceType {
 }
 
 export interface SkillType {
+  id: string;
   name: string;
 }
 
 export interface LanguageType {
+  id: string;
   name: string;
 }
 
 export interface HobbyType {
+  id: string;
   name: string;
 }
