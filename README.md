@@ -1,3 +1,3 @@
 # CV Maker
 
-Make your CV on the fly!
+Make your CV on fly!
