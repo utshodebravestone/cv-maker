@@ -11,6 +11,7 @@ import GeneralInfoControl from "./GeneralInfoControl";
 import EducationControl from "./EducationControl";
 import { useAppState } from "../state/AppState";
 import ExperienceControl from "./ExperienceControl";
+import SkillControl from "./SkillControl";
 
 const Control = () => {
   const { cv } = useAppState();
@@ -88,7 +89,18 @@ const Control = () => {
           </div>
         }
       >
-        <h1>Things</h1>
+        {cv.skills.map((skill) => (
+          <Collapse
+            key={skill.id}
+            title={
+              <div>
+                <h1 className="text-xl font-medium">{skill.name}</h1>
+              </div>
+            }
+          >
+            <SkillControl skill={skill} />
+          </Collapse>
+        ))}
       </Collapse>
 
       <Collapse
