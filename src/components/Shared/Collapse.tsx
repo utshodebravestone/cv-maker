@@ -16,7 +16,7 @@ const Collapse = ({
         </button>
       </div>
       <div
-        className={`w-full h-fit max-h-full my-4 overflow-y-scroll no-scrollbar`}
+        className={`w-full h-fit max-h-full my-4 pl-2.5 overflow-y-scroll no-scrollbar`}
       >
         {isOpen && children}
       </div>
