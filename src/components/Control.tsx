@@ -13,6 +13,7 @@ import { useAppState } from "../state/AppState";
 import ExperienceControl from "./ExperienceControl";
 import SkillControl from "./SkillControl";
 import LanguageControl from "./LanguageControl";
+import HobbyControl from "./HobbyControl";
 
 const Control = () => {
   const { cv } = useAppState();
@@ -134,7 +135,18 @@ const Control = () => {
           </div>
         }
       >
-        <h1>Things</h1>
+        {cv.hobbies.map((hobby) => (
+          <Collapse
+            key={hobby.id}
+            title={
+              <div>
+                <h1 className="text-xl font-medium">{hobby.name}</h1>
+              </div>
+            }
+          >
+            <HobbyControl hobby={hobby} />
+          </Collapse>
+        ))}
       </Collapse>
     </div>
   );
