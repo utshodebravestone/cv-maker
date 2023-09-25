@@ -21,6 +21,7 @@ export interface CVType {
 }
 
 export interface EducationType {
+  id: string;
   institute: string;
   location: string;
   studyYear: string;

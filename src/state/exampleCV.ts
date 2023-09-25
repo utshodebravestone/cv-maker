@@ -15,6 +15,7 @@ export const exampleCV: CVType = {
 
   educations: [
     {
+      id: "e1",
       institute: "Foxford University",
       location: "State X, Road Y, Zaed",
       studyYear: "2014-2016",
@@ -23,6 +24,7 @@ export const exampleCV: CVType = {
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus eaque blanditiis nemo. Voluptatibus excepturi adipisci illum nobis dicta assumenda optio.",
     },
     {
+      id: "e2",
       institute: "Foxvart University",
       location: "State X, Road Y, Zaed",
       studyYear: "2016-2018",
@@ -31,6 +33,7 @@ export const exampleCV: CVType = {
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus eaque blanditiis nemo. Voluptatibus excepturi adipisci illum nobis dicta assumenda optio.",
     },
     {
+      id: "e3",
       institute: "University of Foxvort",
       location: "State X, Road Y, Zaed",
       studyYear: "2018-2020",

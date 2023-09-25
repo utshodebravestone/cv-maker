@@ -8,8 +8,12 @@ import {
 } from "react-icons/ai";
 import Collapse from "./Shared/Collapse";
 import GeneralInfoControl from "./GeneralInfoControl";
+import EducationControl from "./EducationControl";
+import { useAppState } from "../state/AppState";
 
 const Control = () => {
+  const { cv } = useAppState();
+
   return (
     <div className="w-full h-full overflow-y-scroll no-scrollbar">
       <h1 className="mb-3 text-center text-4xl">Customize your CV</h1>
@@ -33,7 +37,21 @@ const Control = () => {
           </div>
         }
       >
-        <h1>Things</h1>
+        {cv.educations.map((education) => (
+          <Collapse
+            key={education.id}
+            title={
+              <div>
+                <h1>
+                  {education.degree}/{education.institute} -{" "}
+                  {education.studyYear}
+                </h1>
+              </div>
+            }
+          >
+            <EducationControl education={education} />
+          </Collapse>
+        ))}
       </Collapse>
 
       <Collapse

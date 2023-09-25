@@ -20,7 +20,7 @@ const GeneralInfoControl = () => {
 
   useEffect(() => {
     dispatch(actionUpdate({ ...cv, ...formData }));
-  }, [formData, cv, dispatch]);
+  }, [formData]);
 
   return (
     <form
