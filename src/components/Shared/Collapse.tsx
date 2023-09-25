@@ -15,7 +15,11 @@ const Collapse = ({
           {isOpen ? <AiFillCaretUp size={33} /> : <AiFillCaretDown size={33} />}
         </button>
       </div>
-      <div className="my-4">{isOpen && children}</div>
+      <div
+        className={`w-full h-fit max-h-full my-4 overflow-y-scroll no-scrollbar`}
+      >
+        {isOpen && children}
+      </div>
     </>
   );
 };

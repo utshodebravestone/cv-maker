@@ -17,7 +17,7 @@ const Control = () => {
 
   return (
     <div className="w-full h-full overflow-y-scroll no-scrollbar">
-      <h1 className="mb-3 text-center text-4xl">Customize your CV</h1>
+      <h1 className="mb-3 text-center text-4xl">Customize Your CV</h1>
 
       <Collapse
         title={
