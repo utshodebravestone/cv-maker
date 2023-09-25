@@ -12,6 +12,7 @@ import EducationControl from "./EducationControl";
 import { useAppState } from "../state/AppState";
 import ExperienceControl from "./ExperienceControl";
 import SkillControl from "./SkillControl";
+import LanguageControl from "./LanguageControl";
 
 const Control = () => {
   const { cv } = useAppState();
@@ -111,7 +112,18 @@ const Control = () => {
           </div>
         }
       >
-        <h1>Things</h1>
+        {cv.languages.map((language) => (
+          <Collapse
+            key={language.id}
+            title={
+              <div>
+                <h1 className="text-xl font-medium">{language.name}</h1>
+              </div>
+            }
+          >
+            <LanguageControl language={language} />
+          </Collapse>
+        ))}
       </Collapse>
 
       <Collapse
