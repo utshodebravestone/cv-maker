@@ -1,3 +1,3 @@
 # CV Maker
 
-Make your CV on fly!
+Create Professional CV Online.
